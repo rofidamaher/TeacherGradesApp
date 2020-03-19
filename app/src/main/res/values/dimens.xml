@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_text">15dp</dimen>
+    <dimen name="margin_text">5dp</dimen>
+    <dimen name="btn_width">1dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="text_width">120dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+</resources>

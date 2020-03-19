@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/classA"
+        android:enabled="true"
+        android:title="Class A" />
+
+    <item
+        android:id="@+id/classB"
+        android:title="Class B"/>
+
+    <item
+        android:id="@+id/classC"
+        android:title="Class C"/>
+
+</menu>
