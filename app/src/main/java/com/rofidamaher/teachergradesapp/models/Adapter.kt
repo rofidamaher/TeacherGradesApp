@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.rofidamaher.teachergradesapp.R
 import kotlinx.android.synthetic.main.row.view.*
 
-class Adapter(val mContext: ClassAFragment, val studentList: Array<Student>) :
+class Adapter(val mContext: ClassAFragment, val studentList: ArrayList<Student>) :
     RecyclerView.Adapter<Adapter.viewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)

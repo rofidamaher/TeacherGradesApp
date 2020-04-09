@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_b.*
 
 class ClassAFragment : Fragment() {
 
-    var students :Array<Student> = emptyArray()//List(25) {Student()}
+    var students :ArrayList<Student> = ArrayList() //List(25) {Student()}
 
 
     var newStu_name =""
@@ -34,8 +34,9 @@ class ClassAFragment : Fragment() {
             newStu_name = Enter_name.text.toString()
             newStu_grade = Enter_grade.text.toString()
 
-            students[0].Name=newStu_name
-            students[0].Grade=newStu_grade
+            var index = students.size
+            students.add(index, Student(newStu_name,newStu_grade))
+
         }
 
 
@@ -60,21 +61,16 @@ class ClassAFragment : Fragment() {
 
     private fun loadData() {
 
-        students[0].Name="ali"
-        students[0].Grade="20"
-        students[1].Name="Adel"
-        students[1].Grade="20"
-        students[2].Name="Ali"
-        students[2].Grade="50"
-        students[3].Name="Amir"
-        students[3].Grade="35"
-        students[4].Name="ali"
-        students[4].Grade="20"
-        students[5].Name="Adel"
-        students[5].Grade="20"
-        students[6].Name="Ali"
-        students[6].Grade="50"
-        students[7].Name="Amir"
-        students[7].Grade="35"
+
+        students.add(0,Student("ali","20"))
+        students.add(1,Student("Adel","20"))
+        students.add(2,Student("Ali","50"))
+        students.add(3,Student("Amir","35"))
+        students.add(4,Student("Amir","35"))
+        students.add(5,Student("ali","20"))
+        students.add(6,Student("Adel","20"))
+        students.add(7,Student("Ali","50"))
+        students.add(8,Student("Amir","35"))
+        students.add(9,Student("Amir","35"))
     }
 }
